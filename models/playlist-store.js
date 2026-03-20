@@ -25,6 +25,10 @@ removeSong(id, songId) {
 addPlaylist(playlist) {
   this.store.addCollection(this.collection, playlist);
 },
+removePlaylist(id) {
+  const playlist = this.getPlaylist(id);
+  this.store.removeCollection(this.collection, playlist);
+},
 
 };
 
